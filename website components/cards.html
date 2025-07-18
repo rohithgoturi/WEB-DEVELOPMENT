@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarrent Cards</title>
+
+    <!-- CSS CODE -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 2px;
+            padding: 0px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .cards {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .card {
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 10px rgba(128,128,128,0.4);
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0px 0px;
+
+        }
+
+        .card-image {
+            position: relative;
+        }
+
+        .card-image .discount {
+            position: absolute;
+            bottom: 10px;
+            left: 5px;
+            background-color: #FF2400;
+            color: white;
+            padding: 10px;
+        }
+
+        .group {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0px 0px 2px;
+            color: grey;
+            font-size: 14px;
+        }
+
+        .name {
+            font-weight: 600;
+            font-size: 25px;
+            color: black;
+        }
+
+        #rating {
+            background-color: #12a242;
+            color: white;
+            padding: 6px;
+            border-radius: 6px;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <!-- Box1-->
+        <div class="card">
+            <div class="card-image">
+                <img
+                 src="https://b.zmtcdn.com/data/pictures/8/96258/79d639339320287468131c420ab1c000.jpg?fit=around|960:500&crop=960:500;*,*"
+                />
+                <div class="discount"> 40% OFF Upto &#x20b9;100</div>
+            </div>
+            <div class="details">
+                <div class="group">
+                    <p class="name">Domino's Pizza</p>
+                    <p id="rating">4.8 &#x2605</p>
+                </div>
+
+                <div class="group">
+                    <p>Pizza,  Fast Food,  Desserts</p>
+                    <p>&#x20b9;400 for two</p>
+                </div>
+
+                <div class="group">
+                    <p>Butibori, Nagpur</p>
+                    <p>2.1km</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Box2-->
+        <div class="card">
+            <div class="card-image">
+                <img
+                 src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/c9/c4/5c/medium-vegetarian-pizza.jpg?w=900&h=500&s=1"
+                />
+                <div class="discount"> 40% OFF Upto &#x20b9;100</div>
+            </div>
+            <div class="details">
+                <div class="group">
+                    <p class="name">Domino's Special</p>
+                    <p id="rating">4.9 &#x2605</p>
+                </div>
+
+                <div class="group">
+                    <p>Pizza,  Fast Food,  Desserts</p>
+                    <p>&#x20b9;700 for two</p>
+                </div>
+
+                <div class="group">
+                    <p>Butibori, Nagpur</p>
+                    <p>2.1km</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Box3-->
+        <div class="card">
+            <div class="card-image">
+                <img
+                 src="https://cdn4.singleinterface.com/files/banner_images/34404/952_1624955497_wednesdaybucketmin.jpg"
+                />
+                <div class="discount"> 30% OFF Upto &#x20b9;120</div>
+            </div>
+            <div class="details">
+                <div class="group">
+                    <p class="name">KFC Leg Peice</p>
+                    <p id="rating">4.3 &#x2605</p>
+                </div>
+
+                <div class="group">
+                    <p>Crispy Chicken, Chicken 65, Spicy</p>
+                    <p>&#x20b9;500 for two</p>
+                </div>
+
+                <div class="group">
+                    <p>Satgaon Fata, Nagpur</p>
+                    <p>1.4km</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Box4-->
+       <div class="card">
+            <div class="card-image">
+                <img
+                 src="https://media.cnn.com/api/v1/images/stellar/prod/201224141854-01-getty-kfc-japan.jpg?q=x_0,y_0,h_898,w_1596,c_crop/h_833,w_1480"
+                />
+                <div class="discount"> 30% OFF Upto &#x20b9;120</div>
+            </div>
+            <div class="details">
+                <div class="group">
+                    <p class="name">KFC Special Combo</p>
+                    <p id="rating">4.8 &#x2605</p>
+                </div>
+
+                <div class="group">
+                    <p>Crispy Chicken, Chicken 65, Spicy</p>
+                    <p>&#x20b9;1000 for two</p>
+                </div>
+
+                <div class="group">
+                    <p>Satgaon Fata, Nagpur</p>
+                    <p>1.4km</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Box5-->
+        <div class="card">
+            <div class="card-image">
+                <img
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpfK5gyH3PDwrXOAWkOMjnuve9y5NTvTx9NQ&s"
+                />
+                <div class="discount"> 30% OFF Upto &#x20b9;120</div>
+            </div>
+            <div class="details">
+                <div class="group">
+                    <p class="name">KFC Spicy Bucket</p>
+                    <p id="rating">5.0 &#x2605</p>
+                </div>
+
+                <div class="group">
+                    <p>Crispy Chicken, Chicken 65, Spicy</p>
+                    <p>&#x20b9;400 for two</p>
+                </div>
+
+                <div class="group">
+                    <p>Satgaon Fata, Nagpur</p>
+                    <p>1.4km</p>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Box6 -->
+       <div class="card">
+            <div class="card-image">
+                <img
+                 src=" https://etimg.etb2bimg.com/photo/76955086.cms"
+                />
+                <div class="discount"> 40% OFF Upto &#x20b9;100</div>
+            </div>
+            <div class="details">
+                <div class="group">
+                    <p class="name">Roasted Chicken</p>
+                    <p id="rating">4.5 &#x2605</p>
+                </div>
+
+                <div class="group">
+                    <p>Spicy And Crispy Chicken</p>
+                    <p>&#x20b9;400 for two</p>
+                </div>
+
+                <div class="group">
+                    <p>Butibori MIDC, Nagpur</p>
+                    <p>1.2km</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- Box7-->
+        <div class="card">
+            <div class="card-image">
+                <img
+                 src="https://www.livelaw.in/h-upload/2024/08/19/1500x900_556384-burger-king.webp"
+                />
+                <div class="discount"> 40% OFF Upto &#x20b9;100</div>
+            </div>
+            <div class="details">
+                <div class="group">
+                    <p class="name">Burger King</p>
+                    <p id="rating">3.9 &#x2605</p>
+                </div>
+
+                <div class="group">
+                    <p>All Types of Burgers</p>
+                    <p>&#x20b9;300 for two</p>
+                </div>
+
+                <div class="group">
+                    <p>Butibori MIDC, Nagpur</p>
+                    <p>1.8km</p>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Box8 -->
+       <div class="card">
+            <div class="card-image">
+                <img
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnvI8bJQhgQcKqYOUhQtaIe_TRM_a2ELkvXg&s"
+                />
+                <div class="discount"> 40% OFF Upto &#x20b9;100</div>
+            </div>
+            <div class="details">
+                <div class="group">
+                    <p class="name">Chicken 65</p>
+                    <p id="rating">4.9 &#x2605</p>
+                </div>
+
+                <div class="group">
+                    <p>Crispy and Spicy Chicken</p>
+                    <p>&#x20b9;400 for two</p>
+                </div>
+
+                <div class="group">
+                    <p>Butibori, Nagpur</p>
+                    <p>0.9km</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
