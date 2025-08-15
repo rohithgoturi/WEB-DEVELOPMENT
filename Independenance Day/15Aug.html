@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Independence Day 2025 - Naya Bharat</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(#fff, #fdf6e3);
+        overflow-x: hidden;
+    }
+    header {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(to right, #ff9933, white, #138808);
+        color: #000;
+        font-size: 2em;
+        font-weight: bold;
+        animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity: 1;}
+    }
+    /* Flag */
+    .flag {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        margin: 20px auto;
+        background: url('https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg');
+        background-size: cover;
+        animation: wave 3s infinite linear;
+    }
+    @keyframes wave {
+        0% { transform: rotate(0deg) skewY(0deg); }
+        50% { transform: rotate(1deg) skewY(3deg); }
+        100% { transform: rotate(0deg) skewY(0deg); }
+    }
+    /* Countdown */
+    .countdown {
+        text-align: center;
+        font-size: 1.5em;
+        margin: 10px;
+    }
+    /* Balloons */
+    .balloon {
+        position: absolute;
+        width: 40px;
+        height: 55px;
+        border-radius: 50% 50% 45% 45%;
+        animation: floatUp 6s linear infinite;
+        box-shadow: inset -3px -5px rgba(0,0,0,0.1);
+    }
+    .balloon::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 20px;
+        background: gray;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @keyframes floatUp {
+        from { transform: translateY(100vh); opacity: 1; }
+        to { transform: translateY(-400px); opacity: 0.7; }
+    }
+    /* Slogan */
+    .slogan {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 20px;
+        animation: textColorChange 3s infinite alternate;
+    }
+    @keyframes textColorChange {
+        0% { color: #ff9933; }
+        50% { color: #138808; }
+        100% { color: #000080; }
+    }
+    /* Cards */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    .card {
+        background: white;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        margin: 10px;
+        width: 200px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .card img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    /* Slideshow */
+    .slideshow-container {
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+    }
+    .slides {
+        display: none;
+        animation: fade 1s ease-in-out;
+    }
+    .slides img {
+        width: 100%;
+    }
+    @keyframes fade {
+        from { opacity: 0.4; }
+        to { opacity: 1; }
+    }
+    /* Mobile responsive */
+    @media screen and (max-width: 600px) {
+        .cards {
+            flex-direction: column;
+            align-items: center;
+        }
+        .flag { width: 90%; height: auto; }
+    }
+</style>
+</head>
+<body>
+
+<header>Independence Day 2026 - Naya Bharat</header>
+
+<div class="flag"></div>
+
+<div class="countdown">
+    Countdown to Independence Day 2026: <span id="timer"></span>
+</div>
+
+<div class="slogan">Naya Bharat - Developed India 2047</div>
+
+<!-- <div class="slideshow-container">
+    <div class="slides">
+        <img src="https://d34vm3j4h7f97z.cloudfront.net/optimized/4X/a/8/d/a8d901657b1e91c534a95d7aed0cffd9c7cd7b75_2_690x388.jpeg">
+    </div>
+    <div class="slides">
+        <img src="https://cdn.britannica.com/20/189820-050-D650A54D/Red-Fort-Old-Delhi-India.jpg">
+    </div>
+    <div class="slides">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOF2jaSz4dip1X_J39yElgy9SWlopoEtkJhg&sg">
+    </div>
+</div> -->
+
+<h2 style="text-align:center;">Freedom Fighters</h2>
+<div class="cards">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_F_nLbFmr5xy_YL8Q7CLRr3x381EkYneqsg&s" alt="Gandhi">
+        <p>Mahatma Gandhi</p>
+    </div>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcaG6lyLa1FaAzYPLqjnecsUVv2VjA3UuGGQ&s" alt="Bhagat Singh">
+        <p>Bhagat Singh</p>
+    </div>
+    <div class="card">
+        <img src="https://i.pinimg.com/564x/9a/d5/3d/9ad53d61d329393d4d64ca836c647ffd.jpg" alt="Subhash Chandra Bose">
+        <p>Subhas Chandra Bose</p>
+    </div>
+</div>
+
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<script>
+    // Countdown
+    const timer = document.getElementById('timer');
+    const targetDate = new Date("August 15, 2026 00:00:00").getTime();
+    setInterval(() => {
+        let now = new Date().getTime();
+        let distance = targetDate - now;
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        timer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+
+    // Balloons
+    const colors = ['#ff9933', '#ffffff', '#138808'];
+    for(let i=0; i<25; i++){
+        let balloon = document.createElement('div');
+        balloon.className = 'balloon';
+        balloon.style.left = Math.random()*100 + 'vw';
+        balloon.style.background = colors[Math.floor(Math.random()*colors.length)];
+        balloon.style.animationDuration = (5 + Math.random()*5) + 's';
+        document.body.appendChild(balloon);
+    }
+
+    // Slideshow
+    let slideIndex = 0;
+    function showSlides() {
+        let slides = document.getElementsByClassName("slides");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 3000);
+    }
+    showSlides();
+</script>
+
+</body>
+</html>
